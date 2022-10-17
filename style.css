@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #f4ce01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.todo_title {
+    border: solid 2px black ;
+    width: 45vw;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: black;
+    color: #f4ce01;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.todo_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.todo_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #000;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.todo_item > div {
+    width: 80%;
+}
+
+.todo_item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: #000;
+    color: #f4ce01;
+}
+
+.todo_item > input[type='text'] {
+    border: none;
+    width: 80%;
+    font: inherit;
+}
+
+.todo_item > input[type='button'],
+.todo_item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+
+.todo_item > input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+}
+
+.todo_new-item {
+    display: flex;
+    background-color: #fff59d;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #000;
+    margin-top: 10px;
+    font: inherit;
+}
+
+.todo_new-item > input {
+    background-color: #fff59d;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
